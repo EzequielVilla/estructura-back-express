@@ -1,6 +1,6 @@
 import { Response, Request, NextFunction } from "express";
 import parseToken from "parse-bearer-token";
-import { JWTToken } from "../libs/jwt";
+import { JWTToken } from "../../libs/jwt";
 
 async function authMiddleware(req: Request, res: Response, next: NextFunction) {
   try {

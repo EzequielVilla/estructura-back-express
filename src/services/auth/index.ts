@@ -7,6 +7,7 @@ import { GenericCrud } from "../generic";
 interface FirstCreate extends BasicAuthInterface, BasicUserInterface {}
 
 export class AuthService extends GenericCrud {
+  // Sin el generic aca irian los metodos clasicos de un crud -> find (options), findOne, findByPK, create, update, delete
   static async register(data: FirstCreate) {
     try {
       const { age, birthDate, email, lastName, name, password } = data;

@@ -13,6 +13,7 @@ export interface BasicAuthInterface {
   email: string;
   password: string;
 }
+
 export interface AuthInterface extends BaseInterface, BasicAuthInterface {}
 export class Auth extends Model<
   InferAttributes<Auth>,

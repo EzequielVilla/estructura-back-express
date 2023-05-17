@@ -8,6 +8,12 @@ import { BasicUserInterface } from "../../models/user";
 import { AuthService } from "../../services/auth";
 interface FirstCreate extends BasicAuthInterface, BasicUserInterface {}
 
+// export class AuthController{
+//   static createAuth = asyncHandler(async (req: Request, res: Response) => {
+
+//   })
+// }
+
 export namespace AuthController {
   export const createAuth = asyncHandler(
     async (req: Request, res: Response) => {
