@@ -12,6 +12,6 @@
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false
   },
-    "include": ["./src/*.ts"],
+    "include": ["./src/*.ts", "src/routes/index.ts"],
     "exclude": ["node_modules"]
 }

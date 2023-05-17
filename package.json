@@ -5,6 +5,7 @@
     "license": "MIT",
     "main": "build/app.js",
     "scripts": {
+        "migrate": "npx ts-node ./src/db/sync.ts",
         "dev": "cross-env NODE_ENV=development nodemon --exec ts-node ./src/app.ts",
         "build": "rimraf ./build && tsc --skipLibCheck",
         "start": "cross-env NODE_ENV=production node ./build/app.js",
@@ -27,18 +28,24 @@
         "husky": "^6.0.0",
         "jest": "27.3.1",
         "nodemon": "2.0.4",
-        "ts-jest": "27.0.7",
-        "ts-node": "8.10.2",
-        "typescript": "3.9.7"
+        "ts-jest": "27.0.7"
     },
     "dependencies": {
         "cors": "2.8.5",
         "crypto-js": "4.1.1",
         "dotenv": "8.2.0",
         "express": "4.17.1",
+        "express-async-handler": "^1.2.0",
         "jsonwebtoken": "8.5.1",
         "morgan": "^1.10.0",
         "nodemailer": "6.7.1",
+        "parse-bearer-token": "^1.0.1",
+        "pg": "^8.10.0",
+        "pg-hstore": "^2.3.4",
+        "reflect-metadata": "^0.1.13",
+        "sequelize": "^6.31.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4",
         "yup": "^0.32.11"
     },
     "config": {
